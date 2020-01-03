@@ -1,8 +1,9 @@
 " show line numbers
-:set number
+set number
 
 " colour theme
 syntax enable
+color slate
 
 " make sure I use hjkl :-)
 noremap <Up> <nop>
