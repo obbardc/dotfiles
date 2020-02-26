@@ -21,3 +21,7 @@ noremap <Left> <nop>
 " show trailing whitespace
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
+
+ " highlight lines that go over 80-chars
+ highlight ColorColumn ctermbg=magenta 
+ call matchadd('ColorColumn', '\%81v', 100)
