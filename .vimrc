@@ -22,6 +22,10 @@ noremap <Left> <nop>
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
 
- " highlight lines that go over 80-chars
- highlight ColorColumn ctermbg=magenta 
- call matchadd('ColorColumn', '\%81v', 100)
+" highlight lines that go over 80-chars
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
+" filetype plugin
+" requires package vim-scripts
+filetype plugin indent on
